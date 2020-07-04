@@ -78,7 +78,7 @@ typedef struct {
     struct app_usbd_hid_kbd_ctx_internal_s {
         uint8_t modifier;       //!< Keyboard modifier state @ref app_usbd_hid_kbd_modifier_t.
         uint8_t reserved;       //!< Reserved value.
-        uint8_t key_table[6];   //!< Keyboard keys table @ref app_usbd_hid_kbd_codes_t.
+        uint8_t key_table[10];   //!< Keyboard keys table @ref app_usbd_hid_kbd_codes_t.
     } rep;
 
     uint8_t report_buff[8];     //!< Raw report buffer.

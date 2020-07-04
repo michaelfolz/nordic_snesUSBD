@@ -7,7 +7,7 @@ _build/nrf52840_xxaa/sw_spi.c.o: ..//src/sw_spi.c ..//include/sw_spi.h \
  c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\7\ 2018-q2-update\arm-none-eabi\include\_newlib_version.h \
  c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\7\ 2018-q2-update\arm-none-eabi\include\sys\_intsup.h \
  c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\7\ 2018-q2-update\arm-none-eabi\include\sys\_stdint.h \
- ../../vendor/nRF5_SDK_15.3.0_59ac345//components/libraries/delay/nrf_delay.h \
+ ../../vendor/nRF5_SDK_15.3.0_59ac345//modules/nrfx/hal/nrf_gpio.h \
  ../../vendor/nRF5_SDK_15.3.0_59ac345//modules/nrfx/nrfx.h \
  ../../vendor/nRF5_SDK_15.3.0_59ac345//integration/nrfx/nrfx_config.h \
  ../config/sdk_config.h \
@@ -63,10 +63,7 @@ _build/nrf52840_xxaa/sw_spi.c.o: ..//src/sw_spi.c ..//include/sw_spi.h \
  ../../vendor/nRF5_SDK_15.3.0_59ac345//components/libraries/util/sdk_errors.h \
  ../../vendor/nRF5_SDK_15.3.0_59ac345//components/libraries/util/sdk_resources.h \
  ../../vendor/nRF5_SDK_15.3.0_59ac345//modules/nrfx/drivers/nrfx_errors.h \
- ../../vendor/nRF5_SDK_15.3.0_59ac345//components/boards/boards.h \
- ../../vendor/nRF5_SDK_15.3.0_59ac345//modules/nrfx/hal/nrf_gpio.h \
- ../../vendor/nRF5_SDK_15.3.0_59ac345//components/boards/pca10059.h \
- ../../vendor/nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error.h
+ ../../vendor/nRF5_SDK_15.3.0_59ac345//components/libraries/delay/nrf_delay.h
 
 ..//include/sw_spi.h:
 
@@ -86,7 +83,7 @@ c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\7\ 2018-q2-update\arm-none-ea
 
 c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\7\ 2018-q2-update\arm-none-eabi\include\sys\_stdint.h:
 
-../../vendor/nRF5_SDK_15.3.0_59ac345//components/libraries/delay/nrf_delay.h:
+../../vendor/nRF5_SDK_15.3.0_59ac345//modules/nrfx/hal/nrf_gpio.h:
 
 ../../vendor/nRF5_SDK_15.3.0_59ac345//modules/nrfx/nrfx.h:
 
@@ -198,10 +195,4 @@ c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\7\ 2018-q2-update\arm-none-ea
 
 ../../vendor/nRF5_SDK_15.3.0_59ac345//modules/nrfx/drivers/nrfx_errors.h:
 
-../../vendor/nRF5_SDK_15.3.0_59ac345//components/boards/boards.h:
-
-../../vendor/nRF5_SDK_15.3.0_59ac345//modules/nrfx/hal/nrf_gpio.h:
-
-../../vendor/nRF5_SDK_15.3.0_59ac345//components/boards/pca10059.h:
-
-../../vendor/nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error.h:
+../../vendor/nRF5_SDK_15.3.0_59ac345//components/libraries/delay/nrf_delay.h:

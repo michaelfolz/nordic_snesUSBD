@@ -49,30 +49,6 @@
 // <h> nRF_Drivers 
 
 
-// </h> 
-//==========================================================
-
-// <h> app_usbd_cdc_acm - USB CDC ACM class
-
-//==========================================================
-// <q> APP_USBD_CDC_ACM_ENABLED  - Enabling USBD CDC ACM Class library
- 
-
-#ifndef APP_USBD_CDC_ACM_ENABLED
-#define APP_USBD_CDC_ACM_ENABLED 1
-#endif
-
-// <q> APP_USBD_CDC_ACM_ZLP_ON_EPSIZE_WRITE  - Send ZLP on write with same size as endpoint
- 
-
-// <i> If enabled, CDC ACM class will automatically send a zero length packet after transfer which has the same size as endpoint.
-// <i> This may limit throughput if a lot of binary data is sent, but in terminal mode operation it makes sure that the data is always displayed right after it is sent.
-
-#ifndef APP_USBD_CDC_ACM_ZLP_ON_EPSIZE_WRITE
-#define APP_USBD_CDC_ACM_ZLP_ON_EPSIZE_WRITE 1
-#endif
-
-
 //==========================================================
 // <e> GPIOTE_ENABLED - nrf_drv_gpiote - GPIOTE peripheral driver - legacy layer
 //==========================================================
@@ -1388,7 +1364,7 @@
  
 
 #ifndef APP_USBD_HID_MOUSE_ENABLED
-#define APP_USBD_HID_MOUSE_ENABLED 1
+#define APP_USBD_HID_MOUSE_ENABLED 0
 #endif
 
 // <q> HARDFAULT_HANDLER_ENABLED  - hardfault_default - HardFault default handler for debugging and release

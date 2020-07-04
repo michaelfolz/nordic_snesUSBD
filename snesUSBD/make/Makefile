@@ -81,6 +81,8 @@ SRC_FILES += \
   $(PROJECT_DIR)/src/main.c \
   $(PROJECT_DIR)/src/nintendo_i2c.c \
   $(PROJECT_DIR)/src/i2c.c \
+  $(PROJECT_DIR)/src/sw_spi.c \
+
 
 # Include folders common to all targets
 INC_FOLDERS += \
@@ -196,13 +198,6 @@ LIB_FILES += -lc -lnosys -lm
 # Default target - first one defined
 default: nrf52840_xxaa
 
-# Print all targets that can be built
-help:
-	@echo following targets are available:
-	@echo		nrf52840_xxaa
-	@echo		sdk_config - starting external tool for editing sdk_config.h
-	@echo		flash      - flashing binary
-
 TEMPLATE_PATH := $(SDK_ROOT)/components/toolchain/gcc
 
 
@@ -212,16 +207,6 @@ $(foreach target, $(TARGETS), $(call define_target, $(target)))
 
 .PHONY: flash erase
 
-# Flash the program
-flash: default
-	@echo Flashing: $(OUTPUT_DIRECTORY)/nrf52840_xxaa.hex
-	nrfjprog -f nrf52 --program $(OUTPUT_DIRECTORY)/nrf52840_xxaa.hex --sectorerase
-	nrfjprog -f nrf52 --reset
-
-erase:
-	nrfjprog -f nrf52 --eraseall
 
 SDK_CONFIG_FILE := /config/sdk_config.h
 CMSIS_CONFIG_TOOL := $(SDK_ROOT)/external_tools/cmsisconfig/CMSIS_Configuration_Wizard.jar
-sdk_config:
-	java -jar $(CMSIS_CONFIG_TOOL) $(SDK_CONFIG_FILE)
